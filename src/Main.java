@@ -16,7 +16,7 @@ public class Main {
             System.out.println("6. Calcular el area de un cuadrado");
             System.out.println("7. Calcular el area de un circulo");
             System.out.println("8. Calcular el enesimo numero de Fibonacci");
-            System.out.println(". Salir");
+            System.out.println("9. Salir");
             System.out.print("Escoja una opción del menu: ");
 
             num = leer.nextInt();
@@ -39,12 +39,12 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("Escriba la base:");
-                    int c = leer.nextInt();
-                    System.out.println("Escriba el exponente:");
-                    int d = leer.nextInt();
-                    System.out.println("El resultado de " + c + " elevado a " + d + " es: " + exp(c, d));
-                    break;
+                    System.out.println("Dijite La Base de la potenciacion:");
+                    System.out.println("Base: ");
+                    int Base = leer.nextInt();
+                    System.out.println("Potencia: ");
+                    int Potencia = leer.nextInt();
+                    System.out.println("El resultado de : " + Base + " a la potencia de " + Potencia + " Es igual a: " + exp(Base, Potencia, Base));
 
                 case 4:
                     System.out.println("Escriba el radio de la base");
@@ -87,18 +87,17 @@ public class Main {
     public static int mult(int a, int b) {
         int m = 0;
         for (int i = 0; i < b; i++) {
-            m += a;
+            m =m+ a;
         }
         return m;
     }
 
 
-    public static int exp(int c, int d) {
-        int resultado = 1;
-        for (int i = 0; i < d; i++) {
-            resultado *= c;
+    public static int exp(int Base, int Potencia, int Pot) {
+        for (int i = 1; i < Potencia; i++) {
+            Pot = Pot * Base;
         }
-        return resultado;
+        return Pot;
     }
     public static int facto (int x){
         int n=1;
