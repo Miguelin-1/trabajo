@@ -61,10 +61,12 @@ public class Main {
                     System.out.println("Escriba un lado del cuadrado");
                     int l = leer.nextInt();
                     System.out.println("El area del cuadrado es: " + areac(l));
+                    break;
                 case 7:
                     System.out.println("Escriba el radio del circulo");
                     r = leer.nextDouble();
                     System.out.println("El area del cuadrado es: " + areacir(r));
+                    break;
                 case 8:
                     System.out.println("Escriba un número para calcular su posicion en la sucesion de Fibonacci:");
                     int n = leer.nextInt();
